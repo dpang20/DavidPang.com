@@ -1,0 +1,71 @@
+/* General styles */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: #333;
+  padding-top: 60px; /* Adjust based on your navbar's height */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  color: #fff;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffcc00;
+}
+
+/* Home Section */
+.home-section {
+  height: 100vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff; /* White text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow for better readability */
+  margin: 0; /* Ensure no extra margins are applied */
+  padding: 0 15px; /* Some padding to prevent content from touching the edges on small screens */
+}
+
+.home-section h1 {
+  font-size: 4rem; /* Large headline */
+  margin-bottom: 20px;
+}
+
+.home-section p {
+  font-size: 1.5rem; /* Subtitle text size */
+  margin-top: 10px; /* Spacing between the title and subtitle */
+}
+
+.img-thumbnail {
+  padding: 0px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .home-section h1 {
+    font-size: 2.5rem; /* Smaller headline on mobile */
+  }
+
+  .home-section p {
+    font-size: 1rem; /* Smaller subtitle on mobile */
+  }
+}
