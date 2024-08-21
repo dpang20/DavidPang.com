@@ -59,6 +59,24 @@ body {
   padding: 0px;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; 
+  margin-top: 20px;
+}
+
+.icons-SVG {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.2s ease;
+}
+
+.icons-SVG:hover{
+  transform: scale(1.2);
+}
+
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .home-section h1 {

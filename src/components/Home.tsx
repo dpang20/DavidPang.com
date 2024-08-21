@@ -1,5 +1,9 @@
 import React from "react";
+import "../App.css";
 import meImage from "../assets/images/me.jpeg";
+import SocialIcons from "./SocialIcons";
+import linkedIn from "../assets/images/linkedIn.svg";
+import gitHub from "../assets/images/github-mark-white.svg";
 
 const Home = () => {
   return (
@@ -13,6 +17,7 @@ const Home = () => {
         />
         <h1>David Pang</h1>
         <p>Software Engineer</p>
+        <SocialIcons />
       </div>
     </section>
   );
