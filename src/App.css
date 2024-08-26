@@ -92,23 +92,57 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
   margin: 0; 
   padding: 0 15px; 
+  position: relative; /* Make sure the pseudo-element is relative to this */
+  overflow: hidden;
+  background-color: #333; /* Initial background color */
+  transition: background-color 0.9s ease-in-out;
+}
+
+.home-section.background-flip {
+  background-color: #1c1c1c; /* New background color */
+}
+
+.home-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0; /* Start with opacity 0 */
+  pointer-events: none; /* Ensure the pseudo-element doesn't capture clicks */
+  transition: opacity 1.5s ease-in-out;
+}
+
+.home-section.background-flip::before {
+  background-image: url('./assets/images/alt-background.jpg'); /* New background image */
+  opacity: 1;
 }
 
 .home-section h1 {
   font-size: 4rem;
   margin-bottom: 10px;
+  position: relative; /* Ensure text appears above pseudo-element */
+  z-index: 1;
 }
 
 .home-section p {
   font-size: 1.5rem;
   margin-top: 5px;
+  position: relative; /* Ensure text appears above pseudo-element */
+  z-index: 1;
 }
+
 .social-links {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px; /* Increase the gap between icons to 30px */
   margin-top: 20px;
+
 }
 
 .social-icons {
@@ -116,12 +150,14 @@ body {
   justify-content: center;
   gap: 15px; 
   margin-top: 20px;
+
 }
 
 .icons-SVG {
   width: 50px;
   height: 50px;
   transition: transform 0.2s ease;
+    z-index: 1
 }
 
 .icons-SVG:hover{
