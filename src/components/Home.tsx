@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ProfileFlipper from "./ProfileFlipper";
 import "../App.css";
 import SocialIcons from "./SocialIcons";
+import TypingAnimation from "./TypingAnimation";
 
 const Home = () => {
   const [flipped, setFlipped] = useState(false);
@@ -15,7 +16,9 @@ const Home = () => {
       <div className="text-center">
         <ProfileFlipper onFlip={handleFlip} />
         <h1>David Pang</h1>
-        <p>Software Engineer</p>
+        <p>
+          I am a <TypingAnimation />
+        </p>
         <SocialIcons />
       </div>
     </section>

@@ -1,14 +1,15 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap CSS is imported
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 import "../App.css";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          David Pang
-        </a>
+        <Link className="navbar-brand" to="/">
+          Hello!
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -23,24 +24,19 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#home">
+              <Link className="nav-link" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#about">
+              <Link className="nav-link" to="/AboutMe">
                 About Me
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#services">
+              <Link className="nav-link" to="/projects">
                 Projects
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#contact">
-                Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

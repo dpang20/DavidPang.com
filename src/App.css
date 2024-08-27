@@ -10,23 +10,19 @@ html, body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #333;
+  background-color: #081f29;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background: #333;
+  font-family: cascadia code;
+  background: #081f29;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
-/* Navbar styles */
-.navbar {
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
+/* Navbar Styles */
+.navbar.navbar-expand-lg.fixed-top.navbar-dark.bg-dark{
+  background-color: #081f29 !important;
 }
 
 /* Flipper wrapper to control position */
@@ -94,12 +90,12 @@ body {
   padding: 0 15px; 
   position: relative; /* Make sure the pseudo-element is relative to this */
   overflow: hidden;
-  background-color: #333; /* Initial background color */
-  transition: background-color 0.9s ease-in-out;
+  background-color: #081f29; /* Initial background color */
+  transition: background-color 1s ease-in-out;
 }
 
 .home-section.background-flip {
-  background-color: #1c1c1c; /* New background color */
+  background-color: #081f29; /* New background color */
 }
 
 .home-section::before {
@@ -114,7 +110,7 @@ body {
   background-repeat: no-repeat;
   opacity: 0; /* Start with opacity 0 */
   pointer-events: none; /* Ensure the pseudo-element doesn't capture clicks */
-  transition: opacity 1.5s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 .home-section.background-flip::before {
@@ -138,9 +134,10 @@ body {
 
 .social-links {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Increase the gap between icons to 30px */
+  gap: 20px; 
   margin-top: 20px;
 
 }
@@ -157,17 +154,86 @@ body {
   width: 50px;
   height: 50px;
   transition: transform 0.2s ease;
-    z-index: 1
+  z-index: 1
 }
 
 .icons-SVG:hover{
   transform: scale(1.2);
 }
 
+/* About Me Section */
+
+/* About Section */
+.about-section {
+  padding: 60px 20px;
+  background-color: #081f29;
+  color: #fff;
+}
+
+.about-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.about-section .reading-time {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-section ul li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.about-section ul li:before {
+  content: "•";
+  color: #61dafb;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.about-section a {
+  color: #61dafb;
+  text-decoration: underline;
+}
+
+.about-section a:hover {
+  text-decoration: none;
+}
+
+
 
 /* Footer styles */
 .footer {
-  background-color: #333; /* Dark background */
+  background-color: #081f29; /* Dark background */
   color: #ccc; /* Light gray text */
   text-align: center;
   padding: 20px 0;
