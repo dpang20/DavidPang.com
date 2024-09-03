@@ -21,7 +21,7 @@ const Projects = () => {
       {isProjectVisible && (
         <iframe
           className="sorting-visualizer"
-          src={`${import.meta.env.VITE_PUBLIC_URL}/dist/index.html`}
+          src="/dist/index.html"
           title="Sorting Algorithm Visualizer"
           style={{
             width: "100%",
