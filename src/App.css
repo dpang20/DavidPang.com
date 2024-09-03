@@ -118,6 +118,10 @@ body {
   opacity: 1;
 }
 
+h1{
+  color: white;
+}
+
 .home-section h1 {
   font-size: 4rem;
   margin-bottom: 10px;
@@ -163,7 +167,6 @@ body {
 
 /* About Me Section */
 
-/* About Section */
 .about-section {
   padding: 60px 20px;
   background-color: #081f29;
@@ -229,6 +232,29 @@ body {
   text-decoration: none;
 }
 
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This centers the content horizontally */
+  text-align: center;
+  padding: 55px; /* Optional: Add some padding for spacing */
+}
+
+.project-title {
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.sorting-visualizer {
+  width: 100%;
+  max-width: 800px; /* Set a max width for the iframe */
+  height: 500px;
+  border: none;
+  margin-top: 20px;
+}
 
 
 /* Footer styles */
@@ -238,6 +264,7 @@ body {
   text-align: center;
   padding: 20px 0;
   width: 100%;
+  margin-top: auto; /* Push the footer to the bottom */
 }
 
 .footer-content {
@@ -245,6 +272,7 @@ body {
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
+  position: aboslute;
   flex-direction: column;
   align-items: center;
 }

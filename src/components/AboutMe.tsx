@@ -6,6 +6,13 @@ const AboutMe = () => {
     <section className="about-section">
       <div className="container">
         <h1>About Me</h1>
+        <a
+          className="resume-link"
+          href={"/DavidPangResume2024.pdf"}
+          download="DavidPangResume2024.pdf"
+        >
+          Resume
+        </a>
         <p>
           I recently graduated from NYU (May 2024) with a Bachelor of Arts in
           Computer Science and a minor in Economics. My goal in life has always
