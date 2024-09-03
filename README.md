@@ -6,6 +6,20 @@ Welcome to my personal portfolio website! This project showcases my journey as a
 
 This portfolio website serves as a comprehensive showcase of my professional experience, technical skills, and personal interests. It is designed to provide visitors with a clear understanding of who I am, what I do, and what I have accomplished. The website is divided into several sections:
 
+### Tech Stack:
+
+- **Frontend:**
+
+  - **React**
+  - **Vite**
+  - **TypeScript**
+  - **HTML5**
+  - **CSS3**
+  - **Bootstrap**
+
+- **Deployment**
+  - **AWS EC2**
+
 ### Home
 
 A brief introduction to who I am, with links to my social media profiles.
