@@ -4,8 +4,12 @@ import Typed from "typed.js";
 const TypingAnimation = () => {
   useEffect(() => {
     const options = {
-      strings: ["Tech Enthusiast. ", "Web Developer. ", "Software Engineer. "],
-      typeSpeed: 50,
+      strings: [
+        "Tech Enthusiast. ",
+        "Web Developer. ",
+        "Fullstack Software Engineer. ",
+      ],
+      typeSpeed: 60,
       backSpeed: 30,
       loop: false,
       backDelay: 1500,

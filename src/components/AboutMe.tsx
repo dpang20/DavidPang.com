@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <section className="about-section">
       <div className="container">
-        <h1>Why I Love Programming</h1>
+        <h1>About Me</h1>
         <p>
           I recently graduated from NYU (May 2024) with a Bachelor of Arts in
           Computer Science and a minor in Economics. My goal in life has always

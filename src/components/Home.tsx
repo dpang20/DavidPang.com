@@ -17,7 +17,7 @@ const Home = () => {
         <ProfileFlipper onFlip={handleFlip} />
         <h1>David Pang</h1>
         <p>
-          I am a <TypingAnimation />
+          <TypingAnimation />
         </p>
         <SocialIcons />
       </div>

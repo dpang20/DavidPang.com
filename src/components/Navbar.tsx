@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
+import homeIcon from "../assets/images/homeIcon.svg";
 import "../App.css";
 
 const Navbar = () => {
@@ -8,7 +9,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          Hello!
+          <img src={homeIcon} alt="Home" />
         </Link>
         <button
           className="navbar-toggler"
