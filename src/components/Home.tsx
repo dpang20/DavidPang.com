@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ProfileFlipper from "./ProfileFlipper";
 import "../App.css";
 import SocialIcons from "./SocialIcons";
