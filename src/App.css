@@ -235,18 +235,70 @@ h1{
 .projects-section {
   display: flex;
   flex-direction: column;
-  align-items: center; /* This centers the content horizontally */
+  align-items: center; /* Centers the content horizontally */
   text-align: center;
-  padding: 55px; /* Optional: Add some padding for spacing */
+  padding: 55px; /* Add padding for spacing */
 }
 
-.project-title {
-  font-size: 1.5rem;
-  color: #fff;
-  cursor: pointer;
-  text-decoration: underline;
-  margin-bottom: 20px;
+.project-cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping if cards overflow */
+  margin-top: 30px;
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px; /* Add space between cards */
+  width: 100%;
+  max-width: 1200px; /* Set a max width for the container */
 }
+
+.project-card {
+  background-color: white; /* Dark card background */
+  color: black; /* White text */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the card */
+  width: 300px; /* Set a fixed width for each card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Darken shadow on hover */
+}
+
+.project-card h2 {
+  font-size: 1.8rem; /* Adjust title size */
+  margin-bottom: 10px;
+  color: black;
+}
+
+.project-card p {
+  font-size: 1rem; /* Adjust description size */
+  margin-bottom: 15px;
+  color: black;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap; /* Allow tech stack tags to wrap */
+  justify-content: center; /* Center the tech stack tags */
+  gap: 10px; /* Space between tech stack tags */
+}
+
+.tech-tag {
+  background-color: #081f29; /* Dark background for tech tags */
+  border-radius: 5px; /* Rounded corners for tags */
+  padding: 5px 10px;
+  color: white; /* White text */
+  font-size: 0.9rem;
+}
+
+/* Adjust for mobile devices */
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%; /* Make the cards full-width on smaller screens */
+  }
+}
+
 
 .sorting-visualizer {
   width: 100%;
