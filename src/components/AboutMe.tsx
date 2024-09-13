@@ -45,6 +45,13 @@ const AboutMe = () => {
           and I love all Boston sports (hopefully the Pats turn things around
           this season). I'm a big fan of The Beatles, Kanye West, and EDM.
         </p>
+
+        <h4>Powerlifting PRs</h4>
+        <ul>
+          <li>Squat: 365lbs (165.6kg)</li>
+          <li>Bench: 232lbs (105.2kg)</li>
+          <li>Deadlift: 500lbs (226.8kg)</li>
+        </ul>
       </div>
     </section>
   );
