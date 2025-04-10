@@ -7,8 +7,8 @@ const AboutMe = () => {
         <h1>About Me</h1>
         <a
           className="resume-link"
-          href={"/DavidPangResume2025.pdf"}
-          download="DavidPangResume2025.pdf"
+          href={"/DavidPangCV2025.pdf"}
+          download="DavidPangCV2025.pdf"
         >
           Resume
         </a>
